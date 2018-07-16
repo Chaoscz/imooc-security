@@ -1,10 +1,10 @@
 package com.imooc.security.core;
 
-import com.imooc.security.core.properties.SecurityPorperties;
+import com.imooc.security.core.properties.SecurityProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@EnableConfigurationProperties(SecurityPorperties.class)
+@EnableConfigurationProperties(SecurityProperties.class)
 public class SecurityCoreConfig {
 }
