@@ -30,8 +30,10 @@ public class BrowserSecurity  extends WebSecurityConfigurerAdapter{
 
     @Bean
     public PersistentTokenRepository persistentTokenRepository(){
-        JdbcTokenRepositoryImpl tokenRepository = new JdbcTokenRepositoryImpl();
-        return tokenRepository;
+        JdbcTokenRepositoryImpl jdbcTokenRepository = new JdbcTokenRepositoryImpl();
+        jdbcTokenRepository.setCreateTableOnStartup(true);
+        jdbcTokenRepository.setDataSource(dataSource);
+        return jdbcTokenRepository;
     }
 
     @Autowired
