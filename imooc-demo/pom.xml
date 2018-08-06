@@ -18,5 +18,11 @@
         </dependency>
     </dependencies>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>com.imooc.security</groupId>
+            <artifactId>imooc-browser</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>

@@ -1,6 +1,4 @@
 package com.imooc.security.browser.support;
-
-import com.sun.tracing.dtrace.ArgsAttributes;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,5 +8,4 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class SimpleResponse {
     private Object object;
-
 }

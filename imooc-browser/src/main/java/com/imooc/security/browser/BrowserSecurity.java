@@ -12,6 +12,10 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
+import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
+
+import javax.sql.DataSource;
 
 @Configuration
 public class BrowserSecurity  extends WebSecurityConfigurerAdapter{
@@ -20,6 +24,16 @@ public class BrowserSecurity  extends WebSecurityConfigurerAdapter{
     public PasswordEncoder passwordEncoder(){
         return  new BCryptPasswordEncoder();
     }
+
+    @Autowired(required = false)
+    private DataSource dataSource;
+
+    @Bean
+    public PersistentTokenRepository persistentTokenRepository(){
+        JdbcTokenRepositoryImpl tokenRepository = new JdbcTokenRepositoryImpl();
+        return tokenRepository;
+    }
+
     @Autowired
     private SecurityProperties securityPorperties;
     @Autowired

@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.security:spring-security-config:4.2.7.RELEASE">
     <CLASSES>
-      <root url="jar://E:/Maven/mavenrepos/repos/org/springframework/security/spring-security-config/4.2.7.RELEASE/spring-security-config-4.2.7.RELEASE.jar!/" />
+      <root url="jar://F:/tools/maven/repos/org/springframework/security/spring-security-config/4.2.7.RELEASE/spring-security-config-4.2.7.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://E:/Maven/mavenrepos/repos/org/springframework/security/spring-security-config/4.2.7.RELEASE/spring-security-config-4.2.7.RELEASE-javadoc.jar!/" />
+      <root url="jar://F:/tools/maven/repos/org/springframework/security/spring-security-config/4.2.7.RELEASE/spring-security-config-4.2.7.RELEASE-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://E:/Maven/mavenrepos/repos/org/springframework/security/spring-security-config/4.2.7.RELEASE/spring-security-config-4.2.7.RELEASE-sources.jar!/" />
+      <root url="jar://F:/tools/maven/repos/org/springframework/security/spring-security-config/4.2.7.RELEASE/spring-security-config-4.2.7.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
