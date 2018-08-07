@@ -23,13 +23,13 @@ public class ImoocAuthenticationSuccessHandler extends SavedRequestAwareAuthenti
     private ObjectMapper objectMapper;
 
     @Autowired
-    private SecurityProperties securityPorperties;
+    private SecurityProperties securityProperties;
     @Override
     public void onAuthenticationSuccess(HttpServletRequest httpServletRequest,
                                         HttpServletResponse httpServletResponse,
                                         Authentication authentication) throws IOException,ServletException{
         logger.info("登录成功");
-        if(LoginType.JSON.equals(securityPorperties.getBrowser().getLoginType())){
+        if(LoginType.JSON.equals(securityProperties.getBrowser().getLoginType())){
             httpServletResponse.setContentType("application/json;charset=utf-8");
             httpServletResponse.getWriter().write(objectMapper.writeValueAsString(authentication));
         }else {

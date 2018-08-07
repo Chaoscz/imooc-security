@@ -60,7 +60,7 @@ public class ValidateCodeFilter extends OncePerRequestFilter implements Initiali
 
         if (action){
                 try {
-                    validate(new ServletWebRequest(request));
+                    //validate(new ServletWebRequest(request));
                 }catch (ValidateCodeException e){
                     authenticationFailureHandler.onAuthenticationFailure(request,response,e);
                     return;
